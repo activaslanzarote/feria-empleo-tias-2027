@@ -1,0 +1,205 @@
+/* ============================================================
+   IV Feria de Empleo de Tías 2027 · Estilos
+   Los colores de la feria están aquí arriba. Si cambias uno,
+   cambia en toda la web.
+   ============================================================ */
+:root{
+  --morado:#934191;
+  --naranja:#ED8600;
+  --naranja-texto:#C46F00;
+  --amarillo:#F7BF00;
+  --lima:#C2D000;
+  --ciruela:#703759;
+  --crema:#FBF6F2;
+  --melocoton-claro:#FEF2E9;
+  --melocoton:#FBE6D7;
+  --malva-claro:#DECDD7;
+  --malva:#D5B7C9;
+  --tinta:#1A1E30;
+  --gris:#4A4F60;
+  --blanco:#FFFFFF;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;background:var(--crema);color:var(--tinta);font-family:'Open Sans',system-ui,sans-serif;font-size:17px;line-height:1.55}
+img{max-width:100%;display:block}
+a{color:var(--morado)}
+a:hover{color:var(--ciruela)}
+h1,h2,h3,p{margin:0}
+.mont,h1,h2{font-family:'Montserrat',system-ui,sans-serif}
+
+/* Degradado de titulares (firma de la feria) */
+.grad{background:linear-gradient(90deg,var(--morado) 0%,var(--naranja) 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.suave{font-weight:300;color:var(--morado)}
+.fuerte{font-weight:800}
+
+.contenedor{max-width:1180px;margin:0 auto;padding:0 24px}
+.seccion{padding:96px 0}
+.fondo-blanco{background:var(--blanco)}
+.fondo-melocoton{background:var(--melocoton-claro)}
+
+.cabecera-seccion{display:flex;flex-direction:column;align-items:center;text-align:center;gap:14px;margin-bottom:44px}
+.cabecera-seccion.izq{align-items:flex-start;text-align:left;margin-bottom:0}
+.titulo{font-size:clamp(32px,4vw,48px);line-height:1.1}
+.entradilla{color:var(--morado);font-size:19px;max-width:640px}
+
+.etiqueta{display:inline-block;font-family:'Montserrat',sans-serif;font-size:13px;font-weight:700;letter-spacing:.14em;background:var(--malva-claro);color:var(--ciruela);padding:7px 14px;border-radius:999px}
+.chip{display:inline-block;font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;letter-spacing:.1em;background:var(--malva-claro);color:var(--ciruela);padding:5px 10px;border-radius:999px;align-self:flex-start}
+.chip.amarillo{background:var(--amarillo);color:var(--tinta)}
+
+/* Botones */
+.boton{display:inline-block;text-decoration:none;font-weight:700;font-size:18px;padding:16px 26px;border-radius:12px;transition:transform .15s}
+.boton:hover{transform:translateY(-2px)}
+.boton-naranja{background:var(--naranja);color:var(--blanco);box-shadow:0 10px 26px rgba(237,134,0,.32)}
+.boton-naranja:hover{color:var(--blanco)}
+.boton-borde{color:var(--morado);border:2px solid var(--morado);padding:14px 24px}
+.boton-amarillo{background:var(--amarillo);color:var(--tinta);font-weight:800;font-size:19px;padding:18px 30px;box-shadow:0 12px 30px rgba(0,0,0,.18)}
+.boton-amarillo:hover{color:var(--tinta)}
+.botones{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+
+.icono{width:24px;height:24px;flex:0 0 auto;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+
+/* ---------- Menú ---------- */
+.menu{position:sticky;top:0;z-index:10;background:rgba(251,246,242,.95);border-bottom:1px solid #F1E2D6;backdrop-filter:blur(6px)}
+.menu nav{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 24px;padding-top:14px;padding-bottom:14px}
+.marca{text-decoration:none;color:var(--tinta);display:flex;flex-direction:column;line-height:1.1;font-family:'Montserrat',sans-serif}
+.marca small{font-size:12px;font-weight:600;letter-spacing:.14em;color:var(--morado)}
+.marca span{font-size:19px;font-weight:800}
+.enlaces{display:flex;flex-wrap:wrap;align-items:center;gap:6px 22px;font-size:15px;font-weight:600}
+.enlaces a{text-decoration:none;color:var(--tinta)}
+.enlaces .boton{font-size:16px;padding:11px 18px;color:var(--blanco)}
+
+/* ---------- Portada ---------- */
+.portada{display:flex;flex-wrap:wrap;align-items:center;gap:48px;padding-top:72px;padding-bottom:56px}
+.portada-texto{flex:1 1 520px;min-width:0;display:flex;flex-direction:column;gap:24px}
+.portada h1{font-size:clamp(42px,6vw,74px);line-height:1.02;letter-spacing:-.02em}
+.portada h1 span{display:block}
+.portada .intro{font-size:20px;max-width:560px}
+.datos{display:flex;flex-wrap:wrap;gap:10px 18px;align-self:flex-start;background:var(--melocoton);border-radius:18px;padding:14px 20px;font-weight:700;font-size:16px}
+.datos span{display:flex;align-items:center;gap:8px}
+.datos .icono{color:var(--morado)}
+.nota{font-size:15px;color:var(--gris)}
+.portada-foto{flex:1 1 380px;min-width:0;position:relative}
+.portada-foto img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:28px;box-shadow:0 30px 70px rgba(147,65,145,.18)}
+.sello{position:absolute;left:-18px;bottom:40px;background:var(--blanco);border-radius:18px;padding:14px 18px;box-shadow:0 16px 40px rgba(147,65,145,.2);display:flex;align-items:center;gap:12px;font-family:'Montserrat',sans-serif}
+.sello .circulo{width:42px;height:42px;border-radius:50%;background:var(--amarillo);display:flex;align-items:center;justify-content:center;color:var(--tinta)}
+.sello strong{display:block;font-size:17px}
+.sello small{font-size:13px;color:var(--gris);font-weight:500}
+
+/* ---------- Cifras ---------- */
+.cifras{padding:44px 0}
+.cifras .rotulo{text-align:center;font-size:13px;font-weight:700;letter-spacing:.14em;color:var(--ciruela);margin-bottom:24px}
+.cifras-fila{display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between}
+.cifra{flex:1 1 200px;text-align:center}
+.cifra strong{display:block;font-family:'Montserrat',sans-serif;font-size:54px;font-weight:800;line-height:1}
+.cifra span{display:block;margin-top:6px}
+
+/* ---------- Tarjetas ---------- */
+.rejilla{display:flex;flex-wrap:wrap;gap:22px}
+.tarjeta{flex:1 1 300px;background:var(--blanco);border-radius:22px;padding:32px;box-shadow:0 18px 50px rgba(237,134,0,.12);display:flex;flex-direction:column;gap:14px}
+.tarjeta:nth-child(even){box-shadow:0 18px 50px rgba(147,65,145,.12)}
+.tarjeta h3{font-size:22px;color:var(--naranja-texto)}
+.tarjeta:nth-child(even) h3{color:var(--morado)}
+.burbuja{width:56px;height:56px;border-radius:50%;background:var(--melocoton-claro);display:flex;align-items:center;justify-content:center;color:var(--naranja-texto)}
+.burbuja .icono{width:28px;height:28px}
+.tarjeta:nth-child(even) .burbuja{background:#F3E9EF;color:var(--morado)}
+
+.servicio{flex:1 1 320px;background:var(--crema);border-radius:20px;padding:28px;box-shadow:0 14px 40px rgba(147,65,145,.10);display:flex;gap:18px;align-items:flex-start}
+.servicio h3{font-size:19px;color:var(--morado);margin-bottom:6px}
+.servicio:nth-child(even) h3{color:var(--naranja-texto)}
+.servicio .circulo{flex:0 0 52px;height:52px;border-radius:50%;background:var(--morado);color:var(--amarillo);display:flex;align-items:center;justify-content:center}
+.servicio:nth-child(even) .circulo{background:var(--naranja);color:var(--tinta)}
+.servicio .icono{width:26px;height:26px}
+
+/* ---------- Programa ---------- */
+.programa{display:flex;flex-wrap:wrap;gap:56px}
+.programa-intro{flex:1 1 320px;min-width:0;display:flex;flex-direction:column;gap:18px}
+.caja-melocoton{background:var(--melocoton);border-radius:20px;padding:24px;display:flex;flex-direction:column;gap:10px}
+.caja-melocoton .rotulo{font-family:'Montserrat',sans-serif;font-size:13px;font-weight:700;letter-spacing:.12em;color:var(--ciruela)}
+.agenda{flex:2 1 560px;min-width:0;list-style:none;margin:0;padding:0 0 0 28px;border-left:2px solid #E8D6CC;display:flex;flex-direction:column;gap:30px}
+.agenda li{position:relative}
+.agenda li::before{content:"";position:absolute;left:-38px;top:4px;width:16px;height:16px;border-radius:50%;background:var(--lima);border:3px solid var(--crema)}
+.agenda .hora{font-family:'Montserrat',sans-serif;font-weight:800;color:var(--naranja-texto)}
+.agenda h3{font-size:20px;margin:2px 0}
+.agenda .tipo{font-style:italic;color:var(--gris)}
+.salas{display:flex;flex-wrap:wrap;gap:10px;border-left:2px dotted var(--morado);padding-left:14px;margin-top:8px}
+.salas span{background:var(--blanco);border-radius:12px;padding:8px 14px;font-size:15px}
+
+/* ---------- Talleres ---------- */
+.taller{flex:1 1 250px;background:var(--crema);border-radius:22px;padding:28px;box-shadow:0 18px 46px rgba(237,134,0,.14);display:flex;flex-direction:column;gap:12px}
+.taller:nth-child(even){box-shadow:0 18px 46px rgba(147,65,145,.12)}
+.taller .cuando{font-family:'Montserrat',sans-serif;font-size:13px;font-weight:700;color:var(--naranja-texto)}
+.taller h3{font-size:21px;color:var(--morado)}
+.taller:nth-child(even) h3{color:var(--naranja-texto)}
+.taller .perfil{font-size:15px;color:var(--gris)}
+.pie-talleres{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:14px 22px;margin-top:44px}
+.pie-talleres span{font-size:15px;color:var(--gris)}
+
+/* ---------- Empresas ---------- */
+.empresas{display:flex;flex-wrap:wrap;gap:48px;align-items:flex-start}
+.empresas-texto{flex:1 1 440px;min-width:0;display:flex;flex-direction:column;gap:20px}
+.empresas-texto > p{font-size:19px}
+.ventajas{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
+.ventajas li{display:flex;gap:12px;align-items:flex-start}
+.ventajas .icono{color:var(--morado);margin-top:2px}
+.pasos{flex:1 1 380px;min-width:0;background:var(--melocoton);border-radius:26px;padding:34px;display:flex;flex-direction:column;gap:22px}
+.pasos h3{font-family:'Montserrat',sans-serif;font-size:22px;font-weight:800;color:var(--ciruela)}
+.paso{display:flex;gap:16px;align-items:flex-start}
+.paso .num{flex:0 0 44px;height:44px;border-radius:50%;background:var(--blanco);color:var(--morado);font-family:'Montserrat',sans-serif;font-weight:800;font-size:19px;display:flex;align-items:center;justify-content:center}
+.paso:nth-of-type(even) .num{color:var(--naranja-texto)}
+.paso strong{display:block}
+.confirmadas{border-top:1px solid #EBC9B3;padding-top:18px}
+.confirmadas .rotulo{font-family:'Montserrat',sans-serif;font-size:13px;font-weight:700;letter-spacing:.12em;color:var(--ciruela);margin-bottom:10px}
+.logos-empresas{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.logos-empresas img{height:44px;width:auto;background:var(--blanco);border-radius:8px;padding:6px}
+
+/* ---------- Chill out ---------- */
+.chill{display:flex;flex-wrap:wrap;gap:48px;align-items:center;padding:88px 24px}
+.chill img{flex:1 1 380px;min-width:0;width:100%;aspect-ratio:16/11;object-fit:cover;border-radius:26px}
+.chill-texto{flex:1 1 440px;min-width:0;display:flex;flex-direction:column;gap:18px}
+.pildoras{display:flex;flex-wrap:wrap;gap:12px}
+.pildora{display:flex;align-items:center;gap:10px;background:var(--blanco);border-radius:999px;padding:10px 18px 10px 10px;font-weight:700}
+.pildora .circulo{width:36px;height:36px;border-radius:50%;background:var(--morado);color:var(--amarillo);display:flex;align-items:center;justify-content:center}
+.pildora:nth-child(even) .circulo{background:var(--naranja);color:var(--tinta)}
+.pildora .icono{width:20px;height:20px}
+
+/* ---------- Preguntas ---------- */
+.faq{max-width:860px}
+.faq details{background:var(--blanco);border-radius:18px;padding:20px 24px;box-shadow:0 10px 30px rgba(147,65,145,.08);margin-bottom:12px}
+.faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px;font-weight:700;font-size:18px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--naranja);font-size:26px;line-height:1;transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{margin-top:12px}
+
+/* ---------- Llamada final (único bloque morado) ---------- */
+.final{background:var(--morado);color:var(--blanco)}
+.final .contenedor{padding-top:88px;padding-bottom:88px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:24px}
+.final h2{font-size:clamp(34px,4.6vw,56px);line-height:1.08}
+.final h2 span{display:block}
+.final .ventajas-final{display:flex;flex-wrap:wrap;justify-content:center;gap:12px 28px;font-weight:700}
+.final .ventajas-final span{display:flex;align-items:center;gap:8px}
+.final .ventajas-final .icono{color:var(--amarillo)}
+.final a:not(.boton){color:var(--blanco);font-weight:700}
+
+/* ---------- Pie ---------- */
+.pie{background:var(--malva);color:var(--tinta)}
+.pie .contenedor{padding-top:48px;padding-bottom:32px;display:flex;flex-direction:column;gap:28px}
+.logos{display:flex;flex-wrap:wrap;gap:28px}
+.bloque-logo{flex:1 1 240px;background:var(--blanco);border-radius:18px;padding:20px 24px;display:flex;flex-direction:column;gap:12px}
+.bloque-logo.ancho{flex:2 1 320px}
+.bloque-logo .rotulo{font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;letter-spacing:.14em}
+.bloque-logo img{height:56px;width:auto}
+.bloque-logo .fila{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center;min-height:56px;font-weight:600;color:var(--gris)}
+.legal{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px;font-size:15px;border-top:1px solid rgba(26,30,48,.18);padding-top:20px}
+.legal a{color:var(--tinta)}
+.legal nav{display:flex;gap:18px}
+
+/* ---------- Móvil ---------- */
+@media (max-width:720px){
+  .seccion{padding:64px 0}
+  .enlaces a:not(.boton){display:none}
+  .sello{left:12px;bottom:16px}
+  .cifra strong{font-size:44px}
+}
