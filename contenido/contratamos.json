@@ -13,6 +13,8 @@
   "texto": "Las empresas con ofertas abiertas se identifican con un distintivo, reciben candidaturas y hacen entrevistas breves en un espacio reservado. El talento y la empresa se encuentran cara a cara.",
   "foto": "/img/stands-plaza-2026.jpg",
   "foto_pie": "2026 · Stands de empresas",
+  "boton_texto": "",
+  "boton_enlace": "",
   "pestana_empresa": "Si eres empresa",
   "pasos_empresa": [
     {
