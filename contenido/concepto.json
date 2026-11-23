@@ -1,0 +1,44 @@
+{
+  "mostrar": true,
+  "menu": "Concepto",
+  "menu_largo": "El concepto de 2027",
+  "etiqueta": "El concepto de 2027",
+  "manifiesto": "Una feria abierta a ==todas las generaciones==, donde el **talento joven** y la **experiencia profesional** encuentran oportunidades para crecer.",
+  "entradilla": "Queremos que cada persona salga de Plaza El Pavón con algo concreto: una candidatura mejor preparada, una conversación con una empresa, una entrevista o una idea clara de su siguiente paso.",
+  "palabras": [
+    "Personas",
+    "Formación",
+    "Empresas"
+  ],
+  "foto_1": "/img/taller-globos.jpg",
+  "foto_1_alt": "Personas de distintas edades en una dinámica de grupo con globos",
+  "foto_2": "/img/encuentro-risas.jpg",
+  "foto_2_alt": "Conversación distendida entre participantes",
+  "pegatina": "Talento\nsin edad",
+  "publicos": [
+    {
+      "icono": "cap",
+      "titulo": "Jóvenes",
+      "texto": "Primer empleo: conocer qué buscan las empresas de la isla, preparar una candidatura sólida y practicar la primera entrevista.",
+      "destacado": false
+    },
+    {
+      "icono": "star",
+      "titulo": "Mujeres +45",
+      "texto": "Experiencia, criterio y capacidad de adaptación. Un espacio para ponerlas en valor, actualizar herramientas y conectar con empresas que necesitan ese talento.",
+      "destacado": true
+    },
+    {
+      "icono": "building",
+      "titulo": "Empresas",
+      "texto": "Presentar vacantes reales, conocer talento de todas las edades y empezar procesos de selección en la propia feria.",
+      "destacado": false
+    },
+    {
+      "icono": "tool",
+      "titulo": "Centros de FP",
+      "texto": "El alumnado presenta ciclos, proyectos y salidas profesionales, y conecta directamente con las empresas.",
+      "destacado": false
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "mostrar": true,
+  "menu": "2026",
+  "menu_largo": "Una feria que crece",
+  "etiqueta": "III edición · 2026",
+  "titulo": "Una feria que",
+  "titulo_destacado": "sigue creciendo",
+  "entradilla": "La edición de 2026 llenó Plaza El Pavón de personas, empresas y conversaciones. Llegamos a la cuarta edición con una comunidad que ya participa y con ganas de dar un paso más.",
+  "foto_1": "/img/acceso-publico.jpg",
+  "foto_1_pie": "2026 · Llegada de público a Plaza El Pavón",
+  "foto_1_encuadre": "abajo",
+  "foto_2": "/img/simulacion-entrevista.jpg",
+  "foto_2_pie": "Entrevista",
+  "cita_titulo": "09:30–13:30",
+  "cita_texto": "Una mañana para conectar con empresas, formación y nuevas oportunidades.",
+  "cifra_principal": "194",
+  "cifra_principal_texto": "**personas inscritas en talleres** procedentes de los siete municipios de Lanzarote.",
+  "cifras": [
+    {
+      "numero": "330",
+      "unidad": "inscripciones",
+      "texto": "en los cuatro talleres",
+      "naranja": false
+    },
+    {
+      "numero": "124",
+      "unidad": "personas",
+      "texto": "inscritas en el taller de inteligencia artificial, el más solicitado",
+      "naranja": true
+    },
+    {
+      "numero": "7 / 7",
+      "unidad": "municipios",
+      "texto": "de Lanzarote representados entre las personas inscritas",
+      "naranja": false
+    }
+  ],
+  "nota": "Personas inscritas en los talleres de la edición de 2026."
+}

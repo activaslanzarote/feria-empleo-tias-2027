@@ -1,0 +1,205 @@
+{
+  "mostrar": true,
+  "menu": "Programa",
+  "menu_largo": "Programa",
+  "etiqueta": "Miércoles, 17 de marzo · 09:30–13:30",
+  "titulo": "Una mañana llena de",
+  "titulo_destacado": "oportunidades",
+  "entradilla": "Cuatro horas sin solapamientos entre ponencias y talleres. Elige tu perfil y te mostramos la ruta que más te aprovecha.",
+  "filtro_texto": "Diseña tu mañana:",
+  "franjas": [
+    {
+      "hora": "09:30–10:00",
+      "lugar": "Escenario",
+      "titulo": "Bienvenida y reconocimiento a empresas",
+      "texto": "Apertura institucional y agradecimiento a las empresas que traen vacantes.",
+      "tipo": "escenario",
+      "perfiles": [
+        "empresas"
+      ],
+      "salas": []
+    },
+    {
+      "hora": "10:00–10:30",
+      "lugar": "Escenario · Ponencia de apertura",
+      "titulo": "El empleo hoy en Lanzarote",
+      "texto": "Qué perfiles buscan las empresas, qué vacantes hay y cómo seleccionan.",
+      "tipo": "escenario",
+      "perfiles": [
+        "jovenes",
+        "empresas",
+        "fp"
+      ],
+      "salas": []
+    },
+    {
+      "hora": "10:30–11:15",
+      "lugar": "Salas A y B · Talleres, ronda 1",
+      "titulo": "Dos talleres a la vez",
+      "texto": "",
+      "tipo": "talleres",
+      "perfiles": [],
+      "salas": [
+        {
+          "sala": "Sala A",
+          "titulo": "IA para encontrar empleo",
+          "perfiles": [
+            "jovenes",
+            "fp"
+          ]
+        },
+        {
+          "sala": "Sala B",
+          "titulo": "Tu experiencia también cuenta",
+          "perfiles": [
+            "mujeres"
+          ]
+        }
+      ]
+    },
+    {
+      "hora": "11:15–12:00",
+      "lugar": "Salas A y B · Talleres, ronda 2",
+      "titulo": "Dos talleres a la vez",
+      "texto": "",
+      "tipo": "talleres",
+      "perfiles": [],
+      "salas": [
+        {
+          "sala": "Sala A",
+          "titulo": "Busca trabajo en Lanzarote",
+          "perfiles": [
+            "mujeres"
+          ]
+        },
+        {
+          "sala": "Sala B",
+          "titulo": "¿Qué digo en una entrevista?",
+          "perfiles": [
+            "jovenes",
+            "fp"
+          ]
+        }
+      ]
+    },
+    {
+      "hora": "12:00–12:45",
+      "lugar": "Zona Conectar",
+      "titulo": "Encuentro con empresas",
+      "texto": "Vacantes visibles, entrega de CV, entrevistas breves y contacto directo.",
+      "tipo": "encuentro",
+      "perfiles": [
+        "jovenes",
+        "mujeres",
+        "empresas",
+        "fp"
+      ],
+      "salas": []
+    },
+    {
+      "hora": "12:45–13:30",
+      "lugar": "Escenario · Ponencia estrella",
+      "titulo": "El futuro del empleo",
+      "texto": "Ponencia de cierre. Ponente por confirmar.",
+      "tipo": "cierre",
+      "perfiles": [
+        "mujeres"
+      ],
+      "salas": []
+    }
+  ],
+  "toda_manana_titulo": "Toda la mañana",
+  "toda_manana": [
+    {
+      "icono": "spark",
+      "titulo": "IA Corner",
+      "texto": "CV, foto profesional y candidaturas a ofertas reales",
+      "perfiles": [
+        "jovenes",
+        "mujeres"
+      ]
+    },
+    {
+      "icono": "bank",
+      "titulo": "Mesa del Servicio Canario de Empleo",
+      "texto": "Orientación y ofertas activas (pendiente de confirmar)",
+      "perfiles": [
+        "mujeres"
+      ]
+    },
+    {
+      "icono": "tool",
+      "titulo": "Talento FP",
+      "texto": "Tres stands de alumnado, ciclos y proyectos",
+      "perfiles": [
+        "jovenes",
+        "empresas",
+        "fp"
+      ]
+    },
+    {
+      "icono": "store",
+      "titulo": "Stands y zona de entrevistas",
+      "texto": "Empresas con distintivo «Hoy contratamos»",
+      "perfiles": [
+        "empresas"
+      ]
+    },
+    {
+      "icono": "coffee",
+      "titulo": "Zona chill out",
+      "texto": "Food truck, café y música suave",
+      "perfiles": []
+    }
+  ],
+  "rutas": [
+    {
+      "perfil": "jovenes",
+      "boton": "Jóvenes",
+      "titulo": "Tu ruta si buscas tu primer empleo",
+      "pasos": [
+        "**10:00** Ponencia de apertura: qué perfiles buscan las empresas",
+        "**10:30** Sala A · IA para encontrar empleo",
+        "**11:15** Sala B · ¿Qué digo en una entrevista?",
+        "**12:00** Encuentro con empresas, con tu CV ya adaptado",
+        "**Toda la mañana** IA Corner y stands de Talento FP"
+      ]
+    },
+    {
+      "perfil": "mujeres",
+      "boton": "Mujeres +45",
+      "titulo": "Tu ruta si quieres volver o cambiar de rumbo",
+      "pasos": [
+        "**10:30** Sala B · Tu experiencia también cuenta",
+        "**11:15** Sala A · Busca trabajo en Lanzarote",
+        "**Entre talleres** IA Corner: foto profesional y CV actualizado",
+        "**12:00** Encuentro con empresas y entrevistas breves",
+        "**12:45** Ponencia estrella: El futuro del empleo"
+      ]
+    },
+    {
+      "perfil": "empresas",
+      "boton": "Empresas",
+      "titulo": "Tu ruta como empresa",
+      "pasos": [
+        "**Antes** Comparte tus vacantes y perfiles",
+        "**09:30** Bienvenida y reconocimiento a empresas",
+        "**10:00** Ponencia de apertura con profesionales de RR. HH.",
+        "**Toda la mañana** Stand con distintivo «Hoy contratamos»",
+        "**12:00** Encuentro con candidaturas y entrevistas breves"
+      ]
+    },
+    {
+      "perfil": "fp",
+      "boton": "Centros de FP",
+      "titulo": "Tu ruta como centro de FP",
+      "pasos": [
+        "**Toda la mañana** Tres stands de Talento FP con el alumnado",
+        "**10:00** Ponencia de apertura: el mercado real de la isla",
+        "**10:30** Sala A · IA para encontrar empleo",
+        "**11:15** Sala B · ¿Qué digo en una entrevista?",
+        "**12:00** Encuentro directo con empresas"
+      ]
+    }
+  ]
+}

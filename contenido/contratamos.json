@@ -1,0 +1,61 @@
+{
+  "mostrar": true,
+  "menu": "Hoy contratamos",
+  "menu_largo": "Hoy contratamos",
+  "etiqueta": "El corazón de la feria",
+  "titulo_1": "Hoy",
+  "titulo_2": "contratamos",
+  "frases": [
+    "Vacantes reales",
+    "Contacto directo",
+    "Entrevistas en el momento"
+  ],
+  "texto": "Las empresas con ofertas abiertas se identifican con un distintivo, reciben candidaturas y hacen entrevistas breves en un espacio reservado. El talento y la empresa se encuentran cara a cara.",
+  "foto": "/img/stands-plaza-2026.jpg",
+  "foto_pie": "2026 · Stands de empresas",
+  "pestana_empresa": "Si eres empresa",
+  "pasos_empresa": [
+    {
+      "momento": "Antes",
+      "titulo": "Comparte tus vacantes",
+      "texto": "Nos cuentas los perfiles que necesitas y la disponibilidad de tu equipo de selección. Las usamos también en el taller de IA."
+    },
+    {
+      "momento": "Durante",
+      "titulo": "Recibe y entrevista",
+      "texto": "Stand con el distintivo «Hoy contratamos», recepción de CV y entrevistas breves en un espacio reservado."
+    },
+    {
+      "momento": "Después",
+      "titulo": "Cuéntanos cómo avanza",
+      "texto": "Seguimiento a 30 y 60 días de las candidaturas que avanzan, siempre con datos agregados."
+    }
+  ],
+  "pestana_candidato": "Si buscas empleo",
+  "pasos_candidato": [
+    {
+      "momento": "Antes",
+      "titulo": "Prepara tu candidatura",
+      "texto": "Inscríbete en los talleres y consulta las vacantes que compartan las empresas participantes."
+    },
+    {
+      "momento": "Durante",
+      "titulo": "Encuentra a la empresa",
+      "texto": "Localiza en el plano los stands con distintivo, entrega tu CV y aprovecha las entrevistas breves que ofrezcan."
+    },
+    {
+      "momento": "Después",
+      "titulo": "Sigue en contacto",
+      "texto": "Cada empresa continúa su proceso. La Mesa del SCE y los recursos locales te acompañan en el siguiente paso."
+    }
+  ],
+  "medimos_titulo": "Lo que medimos",
+  "medimos": [
+    "Vacantes presentadas",
+    "CV entregados",
+    "Entrevistas realizadas",
+    "Candidaturas que avanzan",
+    "Contrataciones a 30 y 60 días"
+  ],
+  "nota": "La feria facilita el contacto directo; cada empresa decide y gestiona su propio proceso de selección. Los datos se comparten de forma agregada, sin difundir información personal."
+}

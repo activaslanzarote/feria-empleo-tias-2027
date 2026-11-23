@@ -1,0 +1,33 @@
+{
+  "mostrar": true,
+  "menu": "Ponencias",
+  "menu_largo": "Ponencias",
+  "etiqueta": "Escenario",
+  "titulo": "Ponencias que",
+  "titulo_destacado": "inspiran",
+  "entradilla": "Dos momentos con funciones distintas: conocer el mercado real de Lanzarote al empezar y abrir perspectivas al terminar.",
+  "items": [
+    {
+      "foto": "/img/mesa-empresas.jpg",
+      "foto_pie": "2026 · Mesa de empresas",
+      "etiqueta": "Apertura",
+      "horario": "10:00–10:30",
+      "estrella": false,
+      "titulo": "El empleo hoy en Lanzarote",
+      "texto": "Empresas y profesionales de recursos humanos explican qué perfiles necesitan, qué vacantes tienen abiertas y cómo seleccionan. Información de primera mano para orientar cada candidatura.",
+      "nota": "Se invitará a la Federación Turística de Lanzarote y a Asolan.",
+      "pendiente": ""
+    },
+    {
+      "foto": "/img/ponencia-ia-energia.jpg",
+      "foto_pie": "El escenario en 2026",
+      "etiqueta": "Ponencia estrella",
+      "horario": "Cierre · 12:45–13:30",
+      "estrella": true,
+      "titulo": "El futuro del empleo",
+      "texto": "Una mirada a las oportunidades y competencias que vienen, útil tanto para quien busca su primer empleo como para quien quiere reinventar su trayectoria.",
+      "nota": "",
+      "pendiente": "Perfil de la ponente pendiente de confirmar."
+    }
+  ]
+}

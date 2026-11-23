@@ -1,0 +1,42 @@
+{
+  "mostrar": true,
+  "menu": "Galería",
+  "menu_largo": "Galería 2026",
+  "etiqueta": "Feria de Empleo de Tías 2026",
+  "titulo": "Ya hemos",
+  "titulo_destacado": "conectado",
+  "titulo_2": "Sigamos haciéndolo.",
+  "entradilla": "Una comunidad que participa: personas de todas las edades, empresas de la isla, talleres llenos y muchas conversaciones.",
+  "video": "/img/feria-2026.mp4",
+  "video_portada": "/img/video-poster.jpg",
+  "video_pie": "Vídeo resumen de la III edición · 1:35",
+  "fotos": [
+    {
+      "imagen": "/img/conversacion-stands-2026.jpg",
+      "pie": "Conversaciones junto a los stands de empresas",
+      "encuadre": "izquierda"
+    },
+    {
+      "imagen": "/img/mesa-empresas-detalle.jpg",
+      "pie": "Mesa de empresas en el escenario",
+      "encuadre": "centro"
+    },
+    {
+      "imagen": "/img/stand-adislan-2026.jpg",
+      "pie": "Orientación en el stand de ADISLAN",
+      "encuadre": "centro"
+    },
+    {
+      "imagen": "/img/participante-sonrisa-2026.jpg",
+      "pie": "Sonrisas en la feria",
+      "encuadre": "arriba"
+    },
+    {
+      "imagen": "/img/stand-orientacion-2026.jpg",
+      "pie": "Información y orientación en los stands",
+      "encuadre": "centro"
+    }
+  ],
+  "pie_1": "Fotografías y vídeo reales de la III Feria de Empleo de Tías (2026).",
+  "pie_2": "Toca una foto para ampliarla."
+}

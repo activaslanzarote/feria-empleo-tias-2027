@@ -1,0 +1,27 @@
+{
+  "mostrar": true,
+  "organiza_titulo": "Organiza",
+  "organiza_logo": "/img/logo-ayuntamiento-tias.png",
+  "organiza_nombre": "Ayuntamiento de Tías",
+  "patrocinan_titulo": "Patrocinan",
+  "logos": [
+    {
+      "imagen": "/img/logo-ftl.png",
+      "nombre": "Federación Turística de Lanzarote",
+      "ancho": true,
+      "enlace": ""
+    },
+    {
+      "imagen": "/img/logo-asolan.png",
+      "nombre": "ASOLAN, Asociación Insular de Empresarios de Hoteles y Apartamentos de Lanzarote",
+      "ancho": false,
+      "enlace": ""
+    },
+    {
+      "imagen": "/img/logo-puerto-del-carmen.png",
+      "nombre": "Puerto del Carmen, Lanzarote",
+      "ancho": false,
+      "enlace": ""
+    }
+  ]
+}

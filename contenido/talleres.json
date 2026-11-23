@@ -1,0 +1,68 @@
+{
+  "mostrar": true,
+  "menu": "Talleres",
+  "menu_largo": "Talleres",
+  "etiqueta": "Dos rondas · dos salas",
+  "titulo": "Talleres para",
+  "titulo_destacado": "pasar a la acción",
+  "entradilla": "45 minutos cada uno, prácticos y conectados con las empresas que estarán en la feria.",
+  "foto_1": "/img/ponencia-ia-herramientas.jpg",
+  "foto_1_pie": "2026 · IA y empleo",
+  "foto_2": "/img/taller-dinamica-bn.jpg",
+  "foto_2_pie": "2026 · Talleres en el Espacio Joven",
+  "foto_2_encuadre": "arriba",
+  "items": [
+    {
+      "insignia": "El más solicitado en 2026",
+      "titulo": "IA para encontrar empleo",
+      "resumen": "Usar la inteligencia artificial para adaptar el CV y la carta a una vacante real de las empresas participantes.",
+      "te_llevas": "Tu candidatura adaptada a una oferta concreta. Móvil opcional.",
+      "publico": [
+        "Jóvenes",
+        "Mujeres +45",
+        "FP"
+      ],
+      "cuando": "Ronda 1 · Sala A",
+      "docente": ""
+    },
+    {
+      "insignia": "",
+      "titulo": "Tu experiencia también cuenta",
+      "resumen": "Poner en valor lo que sabes hacer, venga de un trabajo, de los estudios o de la vida, y contarlo con confianza.",
+      "te_llevas": "Tus fortalezas ordenadas y una forma clara de presentarlas.",
+      "publico": [
+        "Mujeres +45",
+        "Jóvenes"
+      ],
+      "cuando": "Ronda 1 · Sala B",
+      "docente": ""
+    },
+    {
+      "insignia": "",
+      "titulo": "Busca trabajo en Lanzarote",
+      "resumen": "Ofertas y empresas presentes en la feria, el Servicio Canario de Empleo y los recursos locales para buscar con método.",
+      "te_llevas": "Una lista de oportunidades que encajan con tu perfil.",
+      "publico": [
+        "Jóvenes",
+        "Mujeres +45"
+      ],
+      "cuando": "Ronda 2 · Sala A",
+      "docente": ""
+    },
+    {
+      "insignia": "",
+      "titulo": "¿Qué digo en una entrevista?",
+      "resumen": "Preparar respuestas y ensayar entrevistas breves con ejemplos de procesos de selección reales.",
+      "te_llevas": "Respuestas preparadas y la práctica para la entrevista de ese mismo día.",
+      "publico": [
+        "Jóvenes",
+        "FP",
+        "Mujeres +45"
+      ],
+      "cuando": "Ronda 2 · Sala B",
+      "docente": ""
+    }
+  ],
+  "boton_texto": "",
+  "boton_enlace": ""
+}

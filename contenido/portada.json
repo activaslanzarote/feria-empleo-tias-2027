@@ -1,0 +1,20 @@
+{
+  "imagen": "/img/hero-anfiteatro.jpg",
+  "imagen_alt": "Público en las gradas de Plaza El Pavón durante la Feria de Empleo de Tías 2026",
+  "mostrar_organiza": true,
+  "organiza_logo": "/img/logo-ayuntamiento-tias.png",
+  "antetitulo": "Cuarta edición",
+  "titulo": "IV Feria de Empleo de Tías",
+  "titulo_destacado": "2027",
+  "lema_1": "El talento no tiene edad.",
+  "lema_2": "Las oportunidades, tampoco.",
+  "fecha": "Miércoles, 17 de marzo de 2027",
+  "horario": "09:30–13:30 h",
+  "lugar": "Plaza El Pavón, Tías · Lanzarote",
+  "boton_1_texto": "Descubre el proyecto",
+  "boton_1_enlace": "#crece",
+  "boton_2_texto": "Ver el programa",
+  "boton_2_enlace": "#programa",
+  "pie": "**Feria abierta a toda la ciudadanía** · jóvenes, mujeres +45, empresas y centros de FP",
+  "credito": "Foto: Feria de Empleo de Tías 2026"
+}

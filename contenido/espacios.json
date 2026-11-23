@@ -1,0 +1,91 @@
+{
+  "mostrar": true,
+  "menu": "Espacios",
+  "menu_largo": "Espacios y experiencias",
+  "etiqueta": "Plaza El Pavón",
+  "titulo": "Espacios y",
+  "titulo_destacado": "experiencias",
+  "entradilla": "Todo en un mismo recorrido, con plano en la entrada, versión en el móvil por QR, stands numerados y rutas accesibles.",
+  "items": [
+    {
+      "estilo": "morado",
+      "ancho": "doble",
+      "icono": "spark",
+      "imagen": "",
+      "encuadre": "centro",
+      "titulo": "IA Corner",
+      "texto": "Foto profesional, revisión del CV con inteligencia artificial, adaptación a ofertas activas y orientación para LinkedIn. Atención por turnos toda la mañana.",
+      "nota": ""
+    },
+    {
+      "estilo": "foto",
+      "ancho": "doble",
+      "icono": "link",
+      "imagen": "/img/networking-saludo-2026.jpg",
+      "encuadre": "abajo",
+      "titulo": "Networking",
+      "texto": "Conversaciones entre personas, empresas y entidades en cada rincón de la plaza.",
+      "nota": ""
+    },
+    {
+      "estilo": "blanco",
+      "ancho": "simple",
+      "icono": "bank",
+      "imagen": "",
+      "encuadre": "centro",
+      "titulo": "Mesa del SCE",
+      "texto": "Orientación, ofertas activas y trámites del Servicio Canario de Empleo.",
+      "nota": "Participación pendiente de confirmar."
+    },
+    {
+      "estilo": "blanco",
+      "ancho": "simple",
+      "icono": "tool",
+      "imagen": "",
+      "encuadre": "centro",
+      "titulo": "Espacio Talento FP",
+      "texto": "Tres stands donde el alumnado muestra ciclos, requisitos de acceso, salidas y proyectos.",
+      "nota": ""
+    },
+    {
+      "estilo": "blanco",
+      "ancho": "simple",
+      "icono": "store",
+      "imagen": "",
+      "encuadre": "centro",
+      "titulo": "Stands empresariales",
+      "texto": "Empresas numeradas en el plano, con las vacantes visibles y el distintivo «Hoy contratamos».",
+      "nota": ""
+    },
+    {
+      "estilo": "naranja",
+      "ancho": "simple",
+      "icono": "chat",
+      "imagen": "",
+      "encuadre": "centro",
+      "titulo": "Zona de entrevistas",
+      "texto": "Un espacio identificado y reservado para entrevistas breves, sin ruido ni interrupciones.",
+      "nota": ""
+    },
+    {
+      "estilo": "foto",
+      "ancho": "doble",
+      "icono": "coffee",
+      "imagen": "/img/food-trucks.jpg",
+      "encuadre": "centro",
+      "titulo": "Zona chill out",
+      "texto": "Food truck, café y DJ con música suave. Para quedarse, descansar y seguir conversando.",
+      "nota": ""
+    },
+    {
+      "estilo": "foto",
+      "ancho": "doble",
+      "icono": "doc",
+      "imagen": "/img/punto-informacion.jpg",
+      "encuadre": "arriba",
+      "titulo": "Apoyo a candidaturas",
+      "texto": "Punto de información y acompañamiento para preparar, imprimir y entregar el CV a las empresas adecuadas.",
+      "nota": ""
+    }
+  ]
+}
