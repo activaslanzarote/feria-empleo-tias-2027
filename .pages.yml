@@ -1,0 +1,922 @@
+# Panel de edición de la web de la Feria de Empleo de Tías (Pages CMS · app.pagescms.org)
+media:
+  input: img
+  output: /img
+content:
+- name: general
+  label: ⚙️ Datos generales
+  type: file
+  path: contenido/general.json
+  format: json
+  fields:
+  - name: titulo_seo
+    label: Título de la web (pestaña del navegador y Google)
+    type: string
+  - name: descripcion_seo
+    label: Descripción para Google y redes
+    type: text
+  - name: imagen_redes
+    label: Imagen al compartir el enlace (WhatsApp, redes)
+    type: image
+    description: Horizontal, unos 1200 × 630 px.
+  - name: icono_pestana
+    label: Icono de la pestaña y de Google
+    type: image
+    description: Cuadrado, mínimo 192 × 192 px (PNG).
+  - name: marca_1
+    label: Nombre en el menú · primera palabra
+    type: string
+  - name: marca_2
+    label: Nombre en el menú · palabra en naranja
+    type: string
+  - name: marca_sub
+    label: Texto pequeño bajo el nombre
+    type: string
+  - name: boton_menu_texto
+    label: Botón amarillo del menú · texto
+    type: string
+  - name: boton_menu_enlace
+    label: Botón amarillo del menú · enlace
+    type: string
+    description: Puede ser una sección (#programa) o una web completa (https://…).
+  - name: franja
+    label: Palabras de la franja animada
+    type: string
+    list: true
+  - name: pie_1
+    label: Pie de página · texto 1
+    type: string
+    description: 'Para poner algo en negrita, escríbelo entre dos asteriscos: **así**.'
+  - name: pie_2
+    label: Pie de página · texto 2
+    type: string
+  - name: enlaces_legales
+    label: Enlaces legales en el pie
+    type: object
+    list:
+      collapsible:
+        collapsed: true
+        summary: '{fields.texto}'
+    fields:
+    - name: texto
+      label: Texto
+      type: string
+    - name: url
+      label: Enlace
+      type: string
+- name: portada
+  label: 🏠 Portada
+  type: file
+  path: contenido/portada.json
+  format: json
+  fields:
+  - name: imagen
+    label: Foto de fondo
+    type: image
+    description: Horizontal y grande (mínimo 1800 px de ancho).
+  - name: imagen_alt
+    label: Descripción de la foto (para personas ciegas)
+    type: string
+  - name: mostrar_organiza
+    label: Mostrar la tarjeta «Organiza» con el logo
+    type: boolean
+  - name: organiza_logo
+    label: Logo de la tarjeta «Organiza»
+    type: image
+  - name: antetitulo
+    label: Texto pequeño sobre el titular
+    type: string
+  - name: titulo
+    label: Titular
+    type: string
+  - name: titulo_destacado
+    label: Final del titular (en color)
+    type: string
+  - name: lema_1
+    label: Lema · primera línea
+    type: string
+  - name: lema_2
+    label: Lema · segunda línea (naranja)
+    type: string
+  - name: fecha
+    label: Fecha
+    type: string
+  - name: horario
+    label: Horario
+    type: string
+  - name: lugar
+    label: Lugar
+    type: string
+  - name: boton_1_texto
+    label: Botón naranja · texto
+    type: string
+  - name: boton_1_enlace
+    label: Botón naranja · enlace
+    type: string
+  - name: boton_2_texto
+    label: Botón transparente · texto
+    type: string
+  - name: boton_2_enlace
+    label: Botón transparente · enlace
+    type: string
+  - name: pie
+    label: Texto bajo los botones
+    type: string
+    description: 'Para poner algo en negrita, escríbelo entre dos asteriscos: **así**.'
+  - name: credito
+    label: Crédito de la foto
+    type: string
+- name: crece
+  label: 📈 Una feria que crece (2026)
+  type: file
+  path: contenido/crece.json
+  format: json
+  fields:
+  - name: mostrar
+    label: Mostrar esta sección en la web
+    type: boolean
+  - name: menu
+    label: Nombre en el menú (corto)
+    type: string
+  - name: menu_largo
+    label: Nombre en el menú del móvil
+    type: string
+  - name: etiqueta
+    label: Etiqueta pequeña sobre el titular
+    type: string
+  - name: titulo
+    label: Titular
+    type: string
+  - name: titulo_destacado
+    label: Final del titular (en color)
+    type: string
+  - name: entradilla
+    label: Entradilla
+    type: text
+    description: 'Para poner algo en negrita, escríbelo entre dos asteriscos: **así**.'
+  - name: foto_1
+    label: Foto grande
+    type: image
+  - name: foto_1_pie
+    label: Foto grande · pie
+    type: string
+  - name: foto_1_encuadre
+    label: Foto grande · encuadre
+    type: select
+    options: &id004
+      values:
+      - name: centro
+        label: Centrado
+      - name: arriba
+        label: Más arriba
+      - name: abajo
+        label: Más abajo
+      - name: izquierda
+        label: Izquierda
+      - name: derecha
+        label: Derecha
+  - name: foto_2
+    label: Foto pequeña
+    type: image
+  - name: foto_2_pie
+    label: Foto pequeña · pie
+    type: string
+  - name: cita_titulo
+    label: Caja oscura · texto grande
+    type: string
+  - name: cita_texto
+    label: Caja oscura · texto
+    type: text
+  - name: cifra_principal
+    label: Cifra principal (caja morada)
+    type: string
+  - name: cifra_principal_texto
+    label: Cifra principal · texto
+    type: text
+    description: 'Para poner algo en negrita, escríbelo entre dos asteriscos: **así**.'
+  - name: cifras
+    label: Otras cifras
+    type: object
+    list:
+      collapsible:
+        collapsed: true
+        summary: '{fields.numero} {fields.unidad}'
+    fields:
+    - name: numero
+      label: Número
+      type: string
+    - name: unidad
+      label: Unidad (junto al número)
+      type: string
+    - name: texto
+      label: Texto
+      type: text
+    - name: naranja
+      label: Número en naranja
+      type: boolean
+  - name: nota
+    label: Nota al pie
+    type: string
+- name: concepto
+  label: 💡 Concepto
+  type: file
+  path: contenido/concepto.json
+  format: json
+  fields:
+  - name: mostrar
+    label: Mostrar esta sección en la web
+    type: boolean
+  - name: menu
+    label: Nombre en el menú (corto)
+    type: string
+  - name: menu_largo
+    label: Nombre en el menú del móvil
+    type: string
+  - name: etiqueta
+    label: Etiqueta pequeña sobre el titular
+    type: string
+  - name: manifiesto
+    label: Frase principal
+    type: text
+    description: '**así** = en degradado de color · ==así== = subrayado lila.'
+  - name: entradilla
+    label: Texto
+    type: text
+    description: 'Para poner algo en negrita, escríbelo entre dos asteriscos: **así**.'
+  - name: palabras
+    label: Tres palabras (pastillas)
+    type: string
+    list:
+      max: 3
+  - name: foto_1
+    label: Foto grande
+    type: image
+  - name: foto_1_alt
+    label: Foto grande · descripción
+    type: string
+  - name: foto_2
+    label: Foto pequeña
+    type: image
+  - name: foto_2_alt
+    label: Foto pequeña · descripción
+    type: string
+  - name: pegatina
+    label: Texto de la pegatina amarilla
+    type: text
+  - name: publicos
+    label: Públicos (tarjetas)
+    type: object
+    list:
+      collapsible:
+        collapsed: true
+        summary: '{fields.titulo}'
+    fields:
+    - name: icono
+      label: Icono
+      type: select
+      options: &id002
+        values:
+        - name: cap
+          label: Birrete (jóvenes, formación)
+        - name: star
+          label: Estrella
+        - name: building
+          label: Edificio (empresas)
+        - name: tool
+          label: Herramienta (FP)
+        - name: spark
+          label: Destello (IA)
+        - name: bank
+          label: Institución (SCE)
+        - name: store
+          label: Tienda (stands)
+        - name: chat
+          label: Bocadillo (entrevistas)
+        - name: coffee
+          label: Café
+        - name: link
+          label: Enlace (networking)
+        - name: doc
+          label: Documento (CV)
+        - name: map
+          label: Mapa
+        - name: cal
+          label: Calendario
+        - name: clock
+          label: Reloj
+        - name: pin
+          label: Ubicación
+        - name: hourglass
+          label: Reloj de arena (pendiente)
+    - name: titulo
+      label: Título
+      type: string
+    - name: texto
+      label: Texto
+      type: text
+    - name: destacado
+      label: Tarjeta destacada en morado
+      type: boolean
+- name: programa
+  label: 🗓️ Programa
+  type: file
+  path: contenido/programa.json
+  format: json
+  fields:
+  - name: mostrar
+    label: Mostrar esta sección en la web
+    type: boolean
+  - name: menu
+    label: Nombre en el menú (corto)
+    type: string
+  - name: menu_largo
+    label: Nombre en el menú del móvil
+    type: string
+  - name: etiqueta
+    label: Etiqueta pequeña sobre el titular
+    type: string
+  - name: titulo
+    label: Titular
+    type: string
+  - name: titulo_destacado
+    label: Final del titular (en color)
+    type: string
+  - name: entradilla
+    label: Entradilla
+    type: text
+    description: 'Para poner algo en negrita, escríbelo entre dos asteriscos: **así**.'
+  - name: filtro_texto
+    label: Texto sobre los botones de perfil
+    type: string
+  - name: franjas
+    label: Programa (franjas horarias)
+    type: object
+    list:
+      collapsible:
+        collapsed: true
+        summary: '{fields.hora} · {fields.titulo}'
+    fields:
+    - name: hora
+      label: Horario
+      type: string
+      description: Formato 09:30–10:00 (se usa para dibujar la barra de colores).
+    - name: lugar
+      label: Lugar o tipo (texto pequeño morado)
+      type: string
+    - name: titulo
+      label: Título
+      type: string
+    - name: texto
+      label: Descripción
+      type: text
+    - name: tipo
+      label: Tipo de franja
+      type: select
+      options:
+        values:
+        - name: escenario
+          label: Escenario (borde morado)
+        - name: talleres
+          label: Talleres
+        - name: encuentro
+          label: Encuentro con empresas
+        - name: cierre
+          label: Cierre (caja oscura)
+        - name: otro
+          label: Otro
+    - name: perfiles
+      label: Se resalta para…
+      type: select
+      options: &id001
+        values: &id003
+        - name: jovenes
+          label: Jóvenes
+        - name: mujeres
+          label: Mujeres +45
+        - name: empresas
+          label: Empresas
+        - name: fp
+          label: Centros de FP
+        multiple: true
+      description: Perfiles a los que se recomienda esta franja.
+    - name: salas
+      label: Salas simultáneas (opcional)
+      type: object
+      list:
+        collapsible:
+          collapsed: true
+          summary: '{fields.sala} · {fields.titulo}'
+      fields:
+      - name: sala
+        label: Sala
+        type: string
+      - name: titulo
+        label: Taller
+        type: string
+      - name: perfiles
+        label: Se resalta para…
+        type: select
+        options: *id001
+  - name: toda_manana_titulo
+    label: Caja «Toda la mañana» · título
+    type: string
+  - name: toda_manana
+    label: Caja «Toda la mañana» · servicios
+    type: object
+    list:
+      collapsible:
+        collapsed: true
+        summary: '{fields.titulo}'
+    fields:
+    - name: icono
+      label: Icono
+      type: select
+      options: *id002
+    - name: titulo
+      label: Título
+      type: string
+    - name: texto
+      label: Texto
+      type: string
+    - name: perfiles
+      label: Se resalta para…
+      type: select
+      options: *id001
+  - name: rutas
+    label: Rutas por perfil
+    type: object
+    list:
+      collapsible:
+        collapsed: true
+        summary: '{fields.boton}'
+    fields:
+    - name: perfil
+      label: Perfil
+      type: select
+      options:
+        values: *id003
+    - name: boton
+      label: Texto del botón
+      type: string
+    - name: titulo
+      label: Título de la ruta
+      type: string
+    - name: pasos
+      label: Pasos de la ruta
+      type: string
+      list: true
+      description: 'Ejemplo: **10:30** Sala A · IA para encontrar empleo'
+- name: ponencias
+  label: 🎤 Ponencias
+  type: file
+  path: contenido/ponencias.json
+  format: json
+  fields:
+  - name: mostrar
+    label: Mostrar esta sección en la web
+    type: boolean
+  - name: menu
+    label: Nombre en el menú (corto)
+    type: string
+  - name: menu_largo
+    label: Nombre en el menú del móvil
+    type: string
+  - name: etiqueta
+    label: Etiqueta pequeña sobre el titular
+    type: string
+  - name: titulo
+    label: Titular
+    type: string
+  - name: titulo_destacado
+    label: Final del titular (en color)
+    type: string
+  - name: entradilla
+    label: Entradilla
+    type: text
+    description: 'Para poner algo en negrita, escríbelo entre dos asteriscos: **así**.'
+  - name: items
+    label: Ponencias
+    type: object
+    list:
+      collapsible:
+        collapsed: true
+        summary: '{fields.titulo}'
+    fields:
+    - name: foto
+      label: Foto
+      type: image
+    - name: foto_pie
+      label: Pie de foto
+      type: string
+    - name: etiqueta
+      label: Etiqueta (Apertura, Ponencia estrella…)
+      type: string
+    - name: horario
+      label: Horario
+      type: string
+    - name: estrella
+      label: Destacada (caja oscura)
+      type: boolean
+    - name: titulo
+      label: Título
+      type: string
+    - name: texto
+      label: Texto
+      type: text
+      description: 'Para poner algo en negrita, escríbelo entre dos asteriscos: **así**.'
+    - name: nota
+      label: Nota pequeña (ponentes, invitados…)
+      type: text
+    - name: pendiente
+      label: Aviso de pendiente (vacío = no se muestra)
+      type: string
+- name: talleres
+  label: 🛠️ Talleres
+  type: file
+  path: contenido/talleres.json
+  format: json
+  fields:
+  - name: mostrar
+    label: Mostrar esta sección en la web
+    type: boolean
+  - name: menu
+    label: Nombre en el menú (corto)
+    type: string
+  - name: menu_largo
+    label: Nombre en el menú del móvil
+    type: string
+  - name: etiqueta
+    label: Etiqueta pequeña sobre el titular
+    type: string
+  - name: titulo
+    label: Titular
+    type: string
+  - name: titulo_destacado
+    label: Final del titular (en color)
+    type: string
+  - name: entradilla
+    label: Entradilla
+    type: text
+    description: 'Para poner algo en negrita, escríbelo entre dos asteriscos: **así**.'
+  - name: foto_1
+    label: Foto 1
+    type: image
+  - name: foto_1_pie
+    label: Foto 1 · pie
+    type: string
+  - name: foto_2
+    label: Foto 2
+    type: image
+  - name: foto_2_pie
+    label: Foto 2 · pie
+    type: string
+  - name: foto_2_encuadre
+    label: Foto 2 · encuadre
+    type: select
+    options: *id004
+  - name: items
+    label: Talleres
+    type: object
+    list:
+      collapsible:
+        collapsed: true
+        summary: '{fields.titulo}'
+    fields:
+    - name: insignia
+      label: Insignia amarilla (opcional)
+      type: string
+    - name: titulo
+      label: Título
+      type: string
+    - name: resumen
+      label: Resumen
+      type: text
+    - name: te_llevas
+      label: Te llevas
+      type: text
+    - name: publico
+      label: Para quién (pastillas)
+      type: string
+      list: true
+    - name: cuando
+      label: Ronda y sala
+      type: string
+    - name: docente
+      label: Imparte (opcional)
+      type: string
+  - name: boton_texto
+    label: Botón de inscripción · texto (vacío = sin botón)
+    type: string
+  - name: boton_enlace
+    label: Botón de inscripción · enlace
+    type: string
+    description: Por ejemplo, el enlace de un Google Forms.
+- name: contratamos
+  label: 🤝 Hoy contratamos
+  type: file
+  path: contenido/contratamos.json
+  format: json
+  fields:
+  - name: mostrar
+    label: Mostrar esta sección en la web
+    type: boolean
+  - name: menu
+    label: Nombre en el menú (corto)
+    type: string
+  - name: menu_largo
+    label: Nombre en el menú del móvil
+    type: string
+  - name: etiqueta
+    label: Etiqueta pequeña
+    type: string
+  - name: titulo_1
+    label: Titular · parte blanca
+    type: string
+  - name: titulo_2
+    label: Titular · parte en color
+    type: string
+  - name: frases
+    label: Frases con flecha
+    type: string
+    list: true
+  - name: texto
+    label: Texto
+    type: text
+    description: 'Para poner algo en negrita, escríbelo entre dos asteriscos: **así**.'
+  - name: foto
+    label: Foto
+    type: image
+  - name: foto_pie
+    label: Pie de foto
+    type: string
+  - name: boton_texto
+    label: Botón para empresas · texto (vacío = sin botón)
+    type: string
+  - name: boton_enlace
+    label: Botón para empresas · enlace
+    type: string
+    description: Por ejemplo, el enlace del formulario de inscripción de empresas.
+  - name: pestana_empresa
+    label: Pestaña 1 · nombre
+    type: string
+  - name: pasos_empresa
+    label: Pestaña 1 · pasos
+    type: object
+    list:
+      collapsible:
+        collapsed: true
+        summary: '{fields.momento} · {fields.titulo}'
+    fields: &id005
+    - name: momento
+      label: Momento (Antes, Durante…)
+      type: string
+    - name: titulo
+      label: Título
+      type: string
+    - name: texto
+      label: Texto
+      type: text
+  - name: pestana_candidato
+    label: Pestaña 2 · nombre
+    type: string
+  - name: pasos_candidato
+    label: Pestaña 2 · pasos
+    type: object
+    list:
+      collapsible:
+        collapsed: true
+        summary: '{fields.momento} · {fields.titulo}'
+    fields: *id005
+  - name: medimos_titulo
+    label: «Lo que medimos» · título
+    type: string
+  - name: medimos
+    label: «Lo que medimos» · indicadores
+    type: string
+    list: true
+  - name: nota
+    label: Nota final
+    type: text
+- name: espacios
+  label: 📍 Espacios
+  type: file
+  path: contenido/espacios.json
+  format: json
+  fields:
+  - name: mostrar
+    label: Mostrar esta sección en la web
+    type: boolean
+  - name: menu
+    label: Nombre en el menú (corto)
+    type: string
+  - name: menu_largo
+    label: Nombre en el menú del móvil
+    type: string
+  - name: etiqueta
+    label: Etiqueta pequeña sobre el titular
+    type: string
+  - name: titulo
+    label: Titular
+    type: string
+  - name: titulo_destacado
+    label: Final del titular (en color)
+    type: string
+  - name: entradilla
+    label: Entradilla
+    type: text
+    description: 'Para poner algo en negrita, escríbelo entre dos asteriscos: **así**.'
+  - name: items
+    label: Espacios
+    type: object
+    list:
+      collapsible:
+        collapsed: true
+        summary: '{fields.titulo}'
+    fields:
+    - name: estilo
+      label: Estilo de la caja
+      type: select
+      options:
+        values:
+        - name: blanco
+          label: Blanca
+        - name: morado
+          label: Morada
+        - name: naranja
+          label: Naranja
+        - name: foto
+          label: Con foto de fondo
+    - name: ancho
+      label: Tamaño
+      type: select
+      options:
+        values:
+        - name: simple
+          label: Normal
+        - name: doble
+          label: Doble de ancho
+    - name: icono
+      label: Icono
+      type: select
+      options: *id002
+    - name: imagen
+      label: Foto (solo para estilo «Con foto»)
+      type: image
+    - name: encuadre
+      label: Encuadre de la foto
+      type: select
+      options: *id004
+    - name: titulo
+      label: Título
+      type: string
+    - name: texto
+      label: Texto
+      type: text
+    - name: nota
+      label: Nota pequeña en cursiva
+      type: string
+- name: galeria
+  label: 📸 Galería
+  type: file
+  path: contenido/galeria.json
+  format: json
+  fields:
+  - name: mostrar
+    label: Mostrar esta sección en la web
+    type: boolean
+  - name: menu
+    label: Nombre en el menú (corto)
+    type: string
+  - name: menu_largo
+    label: Nombre en el menú del móvil
+    type: string
+  - name: etiqueta
+    label: Etiqueta pequeña sobre el titular
+    type: string
+  - name: titulo
+    label: Titular
+    type: string
+  - name: titulo_destacado
+    label: Final del titular (en color)
+    type: string
+  - name: entradilla
+    label: Entradilla
+    type: text
+    description: 'Para poner algo en negrita, escríbelo entre dos asteriscos: **así**.'
+  - name: titulo_2
+    label: Segunda línea del titular
+    type: string
+  - name: video
+    label: Vídeo (MP4, vertical)
+    type: file
+    description: Máximo unos 20 MB. Si lo dejas vacío, solo se muestran las fotos.
+  - name: video_portada
+    label: Imagen de portada del vídeo
+    type: image
+  - name: video_pie
+    label: Pie del vídeo
+    type: string
+  - name: fotos
+    label: Fotos
+    type: object
+    list:
+      collapsible:
+        collapsed: true
+        summary: '{fields.pie}'
+    fields:
+    - name: imagen
+      label: Foto
+      type: image
+    - name: pie
+      label: Pie de foto
+      type: string
+    - name: encuadre
+      label: Encuadre
+      type: select
+      options: *id004
+  - name: pie_1
+    label: Texto bajo la galería (izquierda)
+    type: string
+  - name: pie_2
+    label: Texto bajo la galería (derecha)
+    type: string
+- name: cierre
+  label: 🌅 Cierre
+  type: file
+  path: contenido/cierre.json
+  format: json
+  fields:
+  - name: mostrar
+    label: Mostrar esta sección en la web
+    type: boolean
+  - name: imagen
+    label: Foto de fondo (se ve en blanco y negro)
+    type: image
+  - name: etiqueta
+    label: Etiqueta pequeña
+    type: string
+  - name: titulo_1
+    label: Titular · línea blanca
+    type: string
+  - name: titulo_2
+    label: Titular · línea amarilla
+    type: string
+  - name: texto
+    label: Texto
+    type: text
+  - name: fecha
+    label: Fecha
+    type: string
+  - name: horario
+    label: Horario
+    type: string
+  - name: lugar
+    label: Lugar
+    type: string
+  - name: boton_texto
+    label: Botón · texto
+    type: string
+  - name: boton_enlace
+    label: Botón · enlace
+    type: string
+- name: patrocinadores
+  label: 🏛️ Organiza y patrocinan
+  type: file
+  path: contenido/patrocinadores.json
+  format: json
+  fields:
+  - name: mostrar
+    label: Mostrar esta sección en la web
+    type: boolean
+  - name: organiza_titulo
+    label: Título «Organiza»
+    type: string
+  - name: organiza_logo
+    label: Logo de quien organiza
+    type: image
+  - name: organiza_nombre
+    label: Nombre de quien organiza
+    type: string
+  - name: patrocinan_titulo
+    label: Título «Patrocinan»
+    type: string
+  - name: logos
+    label: Logos de patrocinadores
+    type: object
+    list:
+      collapsible:
+        collapsed: true
+        summary: '{fields.nombre}'
+    fields:
+    - name: imagen
+      label: Logo
+      type: image
+    - name: nombre
+      label: Nombre
+      type: string
+    - name: ancho
+      label: Logo apaisado (más bajo)
+      type: boolean
+    - name: enlace
+      label: Web (opcional)
+      type: string
