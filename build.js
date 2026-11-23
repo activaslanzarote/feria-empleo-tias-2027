@@ -288,6 +288,7 @@ function contratamos(h) {
       <div class="rv">
         ${lista(h.frases).length ? `<div class="hire-claims" style="margin-top:0">${lista(h.frases).map((f) => `<span>${esc(f)}</span>`).join('')}</div>` : ''}
         ${h.texto ? `<p class="lead" style="margin-top:24px">${fmt(h.texto)}</p>` : ''}
+        ${h.boton_texto ? `<p style="margin-top:28px"><a class="btn btn-primary" href="${esc(h.boton_enlace || '#')}"${/^https?:/.test(h.boton_enlace || '') ? ' target="_blank" rel="noopener"' : ''}>${esc(h.boton_texto)} ${ico('right')}</a></p>` : ''}
       </div>
       ${h.foto ? `<div class="hire-photo rv">
         <div class="photo"><img src="${ruta(h.foto)}" alt="${esc(h.foto_pie)}" loading="lazy" style="object-position:center 55%">${h.foto_pie ? `<span class="tag">${esc(h.foto_pie)}</span>` : ''}</div>
@@ -423,7 +424,8 @@ const html = `<!doctype html>
 <meta property="og:title" content="${esc(g.titulo_seo)}">
 <meta property="og:description" content="${esc(g.descripcion_seo)}">
 ${g.imagen_redes ? `<meta property="og:image" content="https://www.feriaempleotias.com${ruta(g.imagen_redes)}">\n<meta name="twitter:card" content="summary_large_image">` : ''}
-<link rel="icon" href="${ruta(S.patrocinadores.organiza_logo || '/img/logo-ayuntamiento-tias.png')}">
+<link rel="icon" href="${ruta(g.icono_pestana || S.patrocinadores.organiza_logo || '/img/logo-ayuntamiento-tias.png')}">
+<link rel="apple-touch-icon" href="${ruta(g.icono_pestana || '/img/logo-ayuntamiento-tias.png')}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;0,800;0,900;1,800&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap">
